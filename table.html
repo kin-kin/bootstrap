@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/navbarMenu.css">
+        <link rel="stylesheet" href="css/table.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Table Page</title>
+    </head>
+    <body class="text-center">
+        <nav class="navbar navbar-expand-md navbar-dark header">
+            <a class="navbar-brand" href="#">kin-kin</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#gnav" aria-controls="gnav" aria-expanded="false" aria-label="Global Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="gnav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link active" href="#" title="Menu1">Menu1</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu2">Menu2</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu3">Menu3</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu4">Menu4</a>
+                    </li>
+                    <li class="nav-item dropdown mx-5 menu">
+                        <a id="menu5" class="nav-link dropdown-toggle" href="#" title="Menu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu5</a>
+                        <div class="dropdown-menu" aria-labelledby="menu5">
+                            <a class="dropdown-item menu" href="#" title="Sub Menu1">Sub Menu1</a>
+                            <a class="dropdown-item menu" href="#" title="Sub Menu2">Sub Menu2</a>
+                            <a class="dropdown-item menu" href="#" title="Sub Menu3">Sub Menu3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <button type="button" class="btn btn-sm btn-secondary btn-block" title="Logout">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="mt-5 mb-4">User List</h1>
+        <div class="list">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr class="title">
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>AAA</td>
+                        <td>AAA@example.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>BBB</td>
+                        <td>BBB@example.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>CCC</td>
+                        <td>CCC@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; XXX Inc. yyyy</p>
+    </body>
+</html>
