@@ -1,0 +1,11 @@
+.header {
+    background-color: #8b4513;
+}
+
+.menu:hover {
+    background-color: #b22222;
+}
+
+.active {
+    background-color: #ff8c00;
+}
