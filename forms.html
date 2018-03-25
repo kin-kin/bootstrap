@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/navbarMenu.css">
+        <link rel="stylesheet" href="css/forms.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Forms Page</title>
+    </head>
+    <body class="text-center">
+        <nav class="navbar navbar-expand-md navbar-dark header">
+            <a class="navbar-brand" href="#">kin-kin</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#gnav" aria-controls="gnav" aria-expanded="false" aria-label="Global Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="gnav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link active" href="#" title="Menu1">Menu1</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu2">Menu2</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu3">Menu3</a>
+                    </li>
+                    <li class="nav-item mx-5 menu">
+                        <a class="nav-link" href="#" title="Menu4">Menu4</a>
+                    </li>
+                    <li class="nav-item dropdown mx-5 menu">
+                        <a id="menu5" class="nav-link dropdown-toggle" href="#" title="Menu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu5</a>
+                        <div class="dropdown-menu" aria-labelledby="menu5">
+                            <a class="dropdown-item menu" href="#" title="Sub Menu1">Sub Menu1</a>
+                            <a class="dropdown-item menu" href="#" title="Sub Menu2">Sub Menu2</a>
+                            <a class="dropdown-item menu" href="#" title="Sub Menu3">Sub Menu3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <button type="button" class="btn btn-sm btn-secondary btn-block" title="Logout">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="mt-5 mb-5">Register User</h1>
+        <div class="input">
+            <form class="form">
+                <div class="form-group row">
+                    <label for="role" class="col-md-3 col-form-label text-right">Role <span class="required">*</span></label>
+                    <div class="col-md-9">
+                        <select id="role" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Administrators</option>
+                            <option>Operators</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row mt-4">
+                    <label for="accountId" class="col-md-3 col-form-label text-right">Account ID <span class="required">*</span></label>
+                    <div class="col-md-9">
+                        <input type="text" id="accountId" class="form-control is-valid" aria-describedby="accountIdHelp" placeholder="Enter account ID" value="valid" required>
+                        <small id="accountIdHelp" class="form-text text-muted text-left">8-20 characters, a-z A-Z 0-9 .-_</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="name" class="col-md-3 col-form-label text-right">Name <span class="required">*</span></label>
+                    <div class="col-md-9">
+                        <input type="text" id="name" class="form-control" aria-describedby="nameHelp" placeholder="Enter name" required>
+                        <small id="nameHelp" class="form-text text-muted text-left">1-30 characters, a-z A-Z 0-9 .-_</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-md-3 col-form-label text-right">Password <span class="required">*</span></label>
+                    <div class="col-md-9">
+                        <input type="password" id="password" class="form-control is-invalid" aria-describedby="passwordHelp" placeholder="Enter password" value="invalid" required>
+                        <small id="passwordHelp" class="form-text text-muted text-left">8-20 characters, a-z A-Z 0-9 .-_</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-3 col-form-label text-right">Email address</label>
+                    <div class="col-md-9">
+                        <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted text-left">8-20 characters, a-z A-Z 0-9 .-_@</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4" title="Register">Register</button>
+            </form>
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; XXX Inc. yyyy</p>
+    </body>
+</html>
