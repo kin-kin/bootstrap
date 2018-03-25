@@ -1,3 +1,19 @@
+.page-item.active .page-link {
+    background-color: #8fbc8f;
+    border-color: #dee2e6;
+    color: #000000;
+}
+
+.page-item.disabled .page-link {
+    background-color: #d2b48c;
+//    border: none;	// set enable to hide the border
+}
+
+.page-link {
+    background-color: #d2b48c;
+//    border: none;	// set enable to hide the border
+}
+
 .list {
     display: -ms-flexbox;
     display: -webkit-box;
